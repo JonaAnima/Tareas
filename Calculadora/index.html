@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Calculadora de Nafta</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calcula tu combustible!</h1>
+        <p>Selecciona tu tipo de combustible</p>
+        <select name="Combustible" id="Combustible">
+            <option value="Nafta">Nafta</option>
+            <option value="Nafta-Premium">Nafta Premium</option>
+            <option value="Gasoil">Gasoil</option>
+        </select>
+
+        <p>Cantidad de kilometros a recorrer:</p>
+        <form class="form" onsubmit="calculo(); return false;">
+            <input type="number" name="cantKilometros" id="kilometros"></input>
+            <p>Cantidad de kilometros que rinde:</p>
+            <input type="number" name="cantRinde" id="rinde"></input>
+            <button type="submit">Aceptar</button>
+            <div>
+                <div id="nombre" class="clase">Precio:</div>
+                <div id="litros" class="clase">Cant litros:</div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
